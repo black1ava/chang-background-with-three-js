@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Change Scene</title>
+  <style>
+    *{
+      margin: 0;
+    }
+
+    #canvas{
+      position: absolute;
+    }
+
+    #controller{
+      position: absolute;
+      display: flex;
+      justify-content: space-evenly;
+      width: 100vw;
+    }
+
+    button{
+      padding: 10px;
+      font-size: 32px;
+      font-weight: bold;
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke: 1px #00ff00;
+      margin-top: 5px;
+      border-color: #00ff00;
+      border-style: ridge;
+      background: transparent;
+      cursor: pointer;
+    }
+  </style>
+  <script src="three.min.js" defer></script>
+  <script src="OrbitControls.js" defer></script>
+  <script src="index.js" defer></script>
+</head>
+<body>
+  <div id="canvas"></div>
+  <div id="controller">
+    <button id="night">
+      Night Scene
+    </button>
+    <button id="mountain">
+      Mountain Scene
+    </button>
+    <button id="night-2">
+      Night-2 Scene
+    </button>
+    <button id="desert">
+      Desert scene
+    </button>
+    <button id="nowhere">
+      Nowhere scene
+    </button>
+  </div>
+</body>
+</html>
