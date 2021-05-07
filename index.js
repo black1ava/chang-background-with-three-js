@@ -78,7 +78,6 @@ class Background{
   }
 
   _changeScene = (sceneName) => {
-    console.log(this.skyboxes[`${ sceneName }`]);
     this.box.material = this.skyboxes[`${ sceneName }`]
   }
 
@@ -90,8 +89,6 @@ class Background{
   _createBox = () => {
     const geometry = new THREE.BoxGeometry(100, 100, 100);
     this.box = new THREE.Mesh(geometry, this.skyboxes.night);
-
-    console.log(this.box);
     this.scene.add(this.box);
   }
 
